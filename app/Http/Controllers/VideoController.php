@@ -10,7 +10,6 @@ class VideoController extends Controller
 
     public function post(Request $videoFile)
     {
-
         $getID3 = new getID3;
 
         $this->validate($videoFile, [
@@ -20,4 +19,12 @@ class VideoController extends Controller
         $fileInfo = $getID3->analyze($videoFile);
         return $fileInfo;
     }
+
+    // public function store(Request $request, FilesystemInterface $filesystem, $folder)
+    // {
+    //     $file = $request->file('upload');
+    //     $stream = fopen($file->getRealPath(), 'r+');
+    //     $filesystem->writeStream('assets/'. $folder . '/' .$file->getClientOriginalName(), $stream);
+    //     fclose($stream);
+    // }
 }
