@@ -2,8 +2,13 @@
 
 This is a PHP test that will help show your knowledge with creating APIs and dealing with videos.
 
-<h1>My Attempt to the API using Lumen 5.5 running Docker</h1>
+## My Attempt relating to the API Test using Lumen 5.5 running Docker
 
+To run this Application you should be able to run docker-compose up -d 
+
+And then you should be able to access it via:
+
+### localhost:8080
 
 
 ## Setup guides
