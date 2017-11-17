@@ -11,6 +11,11 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+// $router->get('/', function() use ($router) {
+//     return "Lumen API By Levi Lucas for Asset TV";
+// });
+
+ 
+$router->group(['prefix' => 'api/v1'], function () use ($router) {
+    $router->post('video','VideoController@post');
 });
